@@ -145,6 +145,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 def verified_callback(user):
     user.is_active = True
 
+ADMINS = (
+    ('Admin', 'skaggarwal2001.com@gmail.com'),
+    ('Satvik', 'skaggarwal2001.com@gmail.com')
+    
+    
+)
+MANAGERS = ADMINS
 
 EMAIL_VERIFIED_CALLBACK = verified_callback
 EMAIL_FROM_ADDRESS = 'dittodukan@gmail.com'
