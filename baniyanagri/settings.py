@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-uo7y1bq_i#zz1+ewnim7h9b$v5fmx(#czopxc#)(ev@0g0$mr%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1' ,'dittodukan.herokuapp.com']
 
 
 # Application definition
@@ -131,7 +131,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATICFILES_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_URL='/media/'
-MEDIA_ROOT=BASE_DIR / 'media'
+MEDIA_ROOT= os.path.join(BASE_DIR, 'media')
 LOGIN_REDIRECT_URL='/checklogin/'
 LOGOUT_REDIRECT_URL='/accounts/login/'
 
